@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 export default function BugoWebsite() {
   const [currentSection, setCurrentSection] = useState("choice")
 
-  const contractAddress = "0x6c490719ce19f3c194f3c4f7c2e11c4f7c2e11c4f7c2e11c4f7c2e11"
+  const contractAddress = "Coming Soon"
 
   const galleryImages = [
     {
@@ -278,7 +278,7 @@ export default function BugoWebsite() {
                   </p>
                   <div className="pl-4 mt-2">
                     <div className="bg-black/20 rounded p-2 border border-white/30">
-                      <code className="text-yellow-200 font-mono text-sm break-all">{contractAddress}</code>
+                      <code className="text-yellow-200 font-mono text-sm break-all">Coming Soon</code>
                     </div>
                   </div>
                   <p className="text-lg pl-4 mt-2">Click Import if prompted.</p>
@@ -392,7 +392,7 @@ export default function BugoWebsite() {
               <div className="bg-blue-500 rounded-lg p-6">
                 <h3 className="text-white font-bold-caps text-xl mb-4">TOKEN ADDRESS</h3>
                 <div className="bg-black/20 rounded p-3">
-                  <code className="text-white font-mono text-sm break-all">{contractAddress}</code>
+                  <code className="text-white font-mono text-sm break-all">Coming Soon</code>
                 </div>
               </div>
             </div>
