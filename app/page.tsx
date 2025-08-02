@@ -586,11 +586,11 @@ export default function BugoWebsite() {
             </div>
 
             <div className="lg:w-1/2 text-center lg:text-left">
-              <h2 className="text-5xl md:text-7xl font-handwriting text-black mb-6 transform rotate-1">EXCHANGES</h2>
+              <h2 className="text-5xl md:text-7xl font-handwriting text-black mb-6 transform rotate-1">AVAILABLE ON</h2>
               <p className="text-2xl text-black/90 mb-8 font-handwriting">
-                $BUGO is available for trading
+                $BUGO is now available
                 <br />
-                on major exchanges.
+                on APE STORE.
               </p>
 
               <div className="flex justify-center lg:justify-start">
