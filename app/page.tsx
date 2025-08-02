@@ -59,6 +59,16 @@ export default function BugoWebsite() {
       alt: "BUGO doing push-ups",
       title: "Strong Bear",
     },
+    {
+      src: "/images/gallery/bugo-shoulder-ride.jpeg",
+      alt: "BUGO bears with crowns - one carrying the other on shoulders",
+      title: "Royal Ride",
+    },
+    {
+      src: "/images/gallery/bugo-ferris-wheel.jpeg",
+      alt: "BUGO bear with glasses sitting in ferris wheel",
+      title: "Fun Fair",
+    },
   ]
 
   const renderGallery = () => (
@@ -549,9 +559,7 @@ export default function BugoWebsite() {
       {/* Hero Section */}
       <div className="relative z-10 container mx-auto px-6 py-8">
         <div className="text-center mb-8">
-          <p className="text-2xl text-white/90 font-handwriting text-shadow">
-            The bear that brings the bull market! 🐻💰
-          </p>
+          <p className="text-2xl text-white/90 font-handwriting text-shadow">Coming Soon</p>
         </div>
 
         {/* Main BUGO Character - Much Larger */}
