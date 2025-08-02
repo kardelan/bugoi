@@ -119,7 +119,10 @@ export default function BugoWebsite() {
         </div>
 
         <div className="flex items-center space-x-4">
-          <Button className="bg-blue-500 hover:bg-blue-600 text-white font-bold-caps px-6 py-3 rounded-full text-shadow">
+          <Button
+            className="bg-blue-500 hover:bg-blue-600 text-white font-bold-caps px-6 py-3 rounded-full text-shadow"
+            onClick={() => window.open("https://ape.store/base/0x0a35b1feba420c53ddab6476adf4600abeb4773e", "_blank")}
+          >
             BUY BUGO
           </Button>
         </div>
@@ -161,7 +164,10 @@ export default function BugoWebsite() {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <p className="text-2xl text-white font-handwriting mb-8 text-shadow">Ready to join the BUGO revolution?</p>
-          <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold-caps px-8 py-4 rounded-full text-xl">
+          <Button
+            className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold-caps px-8 py-4 rounded-full text-xl"
+            onClick={() => window.open("https://ape.store/base/0x0a35b1feba420c53ddab6476adf4600abeb4773e", "_blank")}
+          >
             BUY $BUGO NOW
           </Button>
         </div>
@@ -225,7 +231,10 @@ export default function BugoWebsite() {
         </div>
 
         <div className="flex items-center space-x-4">
-          <Button className="bg-blue-500 hover:bg-blue-600 text-white font-bold-caps px-6 py-3 rounded-full text-shadow">
+          <Button
+            className="bg-blue-500 hover:bg-blue-600 text-white font-bold-caps px-6 py-3 rounded-full text-shadow"
+            onClick={() => window.open("https://ape.store/base/0x0a35b1feba420c53ddab6476adf4600abeb4773e", "_blank")}
+          >
             BUY BUGO
           </Button>
         </div>
@@ -278,7 +287,9 @@ export default function BugoWebsite() {
                   </p>
                   <div className="pl-4 mt-2">
                     <div className="bg-black/20 rounded p-2 border border-white/30">
-                      <code className="text-yellow-200 font-mono text-sm break-all">Coming Soon</code>
+                      <code className="text-yellow-200 font-mono text-sm break-all">
+                        0x0a35b1feba420c53ddab6476adf4600abeb4773e
+                      </code>
                     </div>
                   </div>
                   <p className="text-lg pl-4 mt-2">Click Import if prompted.</p>
@@ -339,7 +350,10 @@ export default function BugoWebsite() {
         </div>
 
         <div className="flex items-center space-x-4">
-          <Button className="bg-blue-500 hover:bg-blue-600 text-white font-bold-caps px-6 py-3 rounded-full text-shadow flex items-center">
+          <Button
+            className="bg-blue-500 hover:bg-blue-600 text-white font-bold-caps px-6 py-3 rounded-full text-shadow flex items-center"
+            onClick={() => window.open("https://ape.store/base/0x0a35b1feba420c53ddab6476adf4600abeb4773e", "_blank")}
+          >
             BUY BUGO
           </Button>
         </div>
@@ -359,7 +373,10 @@ export default function BugoWebsite() {
             </div>
 
             {/* Buy Button */}
-            <Button className="bg-blue-500 hover:bg-blue-600 text-white font-bold-caps px-8 py-4 rounded-full text-shadow flex items-center text-xl">
+            <Button
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold-caps px-8 py-4 rounded-full text-shadow flex items-center text-xl"
+              onClick={() => window.open("https://ape.store/base/0x0a35b1feba420c53ddab6476adf4600abeb4773e", "_blank")}
+            >
               BUY BUGO
             </Button>
           </div>
@@ -392,7 +409,9 @@ export default function BugoWebsite() {
               <div className="bg-blue-500 rounded-lg p-6">
                 <h3 className="text-white font-bold-caps text-xl mb-4">TOKEN ADDRESS</h3>
                 <div className="bg-black/20 rounded p-3">
-                  <code className="text-white font-mono text-sm break-all">Coming Soon</code>
+                  <code className="text-white font-mono text-sm break-all">
+                    0x0a35b1feba420c53ddab6476adf4600abeb4773e
+                  </code>
                 </div>
               </div>
             </div>
@@ -458,7 +477,10 @@ export default function BugoWebsite() {
         </div>
 
         <div className="flex items-center space-x-4">
-          <Button className="bg-blue-500 hover:bg-blue-600 text-white font-bold-caps px-6 py-3 rounded-full text-shadow">
+          <Button
+            className="bg-blue-500 hover:bg-blue-600 text-white font-bold-caps px-6 py-3 rounded-full text-shadow"
+            onClick={() => window.open("https://ape.store/base/0x0a35b1feba420c53ddab6476adf4600abeb4773e", "_blank")}
+          >
             BUY BUGO
           </Button>
         </div>
@@ -550,7 +572,10 @@ export default function BugoWebsite() {
         </div>
 
         <div className="flex items-center space-x-4">
-          <Button className="bg-blue-500 hover:bg-blue-600 text-white font-bold-caps px-6 py-3 rounded-full text-shadow">
+          <Button
+            className="bg-blue-500 hover:bg-blue-600 text-white font-bold-caps px-6 py-3 rounded-full text-shadow"
+            onClick={() => window.open("https://ape.store/base/0x0a35b1feba420c53ddab6476adf4600abeb4773e", "_blank")}
+          >
             BUY BUGO
           </Button>
         </div>
@@ -570,7 +595,7 @@ export default function BugoWebsite() {
         </div>
       </div>
 
-      {/* Available On Section */}
+      {/* Now Live Section */}
       <div className="relative z-10 bg-white py-16">
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
@@ -599,14 +624,19 @@ export default function BugoWebsite() {
 
               <div className="flex justify-center lg:justify-start">
                 {/* APE STORE Card */}
-                <div className="bg-black rounded-lg p-6 border border-gray-700 hover:border-gray-500 transition-colors max-w-md w-full">
+                <a
+                  href="https://ape.store/base/0x0a35b1feba420c53ddab6476adf4600abeb4773e"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-black rounded-lg p-6 border border-gray-700 hover:border-gray-500 transition-colors max-w-md w-full"
+                >
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
                       <img src="/images/banana-logo.png" alt="Banana" className="w-8 h-8 object-contain" />
                     </div>
                     <span className="text-white font-bold-caps text-2xl tracking-wider">APE STORE</span>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -634,7 +664,7 @@ export default function BugoWebsite() {
           {/* Social Media Buttons */}
           <div className="flex justify-center space-x-8 mb-8">
             <a
-              href="https://dexscreener.com"
+              href="https://dexscreener.com/base/0xaAd75109440cA2e9A099f21d6e52eaA1075F288B"
               target="_blank"
               rel="noopener noreferrer"
               className="w-16 h-16 flex items-center justify-center hover:scale-110 transition-transform"
