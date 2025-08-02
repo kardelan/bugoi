@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Twitter, MessageCircle, Send, Globe } from "lucide-react"
 
 export default function BugoWebsite() {
   const [currentSection, setCurrentSection] = useState("choice")
@@ -442,23 +441,21 @@ export default function BugoWebsite() {
             </div>
           </div>
 
-          <h3 className="text-4xl md:text-5xl font-handwriting text-white mb-8 transform -rotate-1 text-shadow-strong">
+          <h3 className="text-4xl md:text-5xl font-handwriting text-white mb-8 transform -rotate-1">
             $BASE Maxi with a bearish grin.
           </h3>
 
+          {/* Social Media Buttons */}
           <div className="flex justify-center space-x-8 mb-8">
-            <Button size="lg" className="bg-white/20 hover:bg-white/30 text-white rounded-full p-6">
-              <Twitter className="w-8 h-8" />
-            </Button>
-            <Button size="lg" className="bg-white/20 hover:bg-white/30 text-white rounded-full p-6">
-              <MessageCircle className="w-8 h-8" />
-            </Button>
-            <Button size="lg" className="bg-white/20 hover:bg-white/30 text-white rounded-full p-6">
-              <Send className="w-8 h-8" />
-            </Button>
-            <Button size="lg" className="bg-white/20 hover:bg-white/30 text-white rounded-full p-6">
-              <Globe className="w-8 h-8" />
-            </Button>
+            <div className="w-16 h-16 flex items-center justify-center">
+              <img src="/images/owl-logo.png" alt="DexScreener" className="w-12 h-12 object-contain" />
+            </div>
+            <div className="w-16 h-16 flex items-center justify-center">
+              <img src="/images/twitter-x-logo-clean.png" alt="Twitter X" className="w-12 h-12 object-contain" />
+            </div>
+            <div className="w-16 h-16 flex items-center justify-center">
+              <img src="/images/telegram-logo-clean.png" alt="Telegram" className="w-12 h-12 object-contain" />
+            </div>
           </div>
         </div>
       </div>
