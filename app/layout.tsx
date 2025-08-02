@@ -6,8 +6,11 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "BUGO - The Bear That Brings The Bull Market",
+  title: "$BUGO",
   description: "BUGO meme coin - $FLR Maxi with a bearish grin",
+  icons: {
+    icon: "/favicon.ico",
+  },
     generator: 'v0.dev'
 }
 
