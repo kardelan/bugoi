@@ -570,7 +570,7 @@ export default function BugoWebsite() {
         </div>
       </div>
 
-      {/* Exchanges Section */}
+      {/* Available On Section */}
       <div className="relative z-10 bg-white py-16">
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
@@ -586,11 +586,15 @@ export default function BugoWebsite() {
             </div>
 
             <div className="lg:w-1/2 text-center lg:text-left">
-              <h2 className="text-5xl md:text-7xl font-handwriting text-black mb-6 transform rotate-1">AVAILABLE ON</h2>
+              <h2 className="text-5xl md:text-7xl font-handwriting text-black mb-6 transform rotate-1">NOW LIVE!</h2>
               <p className="text-2xl text-black/90 mb-8 font-handwriting">
-                $BUGO is now available
+                $BUGO is NOW LIVE!
                 <br />
-                on APE STORE.
+                Smart bear, big brain, BASE native.
+                <br />
+                Join the cutest genius onchain
+                <br />
+                $BUGO is here to bug the charts!
               </p>
 
               <div className="flex justify-center lg:justify-start">
