@@ -558,10 +558,6 @@ export default function BugoWebsite() {
 
       {/* Hero Section */}
       <div className="relative z-10 container mx-auto px-6 py-8">
-        <div className="text-center mb-8">
-          <p className="text-2xl text-white/90 font-handwriting text-shadow">Coming Soon</p>
-        </div>
-
         {/* Main BUGO Character - Much Larger */}
         <div className="flex justify-center mb-8">
           <div className="relative w-full max-w-6xl">
