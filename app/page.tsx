@@ -264,7 +264,7 @@ export default function BugoWebsite() {
                 <div className="space-y-2">
                   <h3 className="text-xl text-yellow-300 font-bold">2. Go to APE STORE</h3>
                   <p className="text-lg leading-relaxed pl-4">
-                    Visit: <span className="text-blue-200 underline">https://apestore.ai/</span>
+                    Visit: <span className="text-blue-200 underline">https://ape.store/</span>
                   </p>
                 </div>
 
@@ -629,15 +629,30 @@ export default function BugoWebsite() {
 
           {/* Social Media Buttons */}
           <div className="flex justify-center space-x-8 mb-8">
-            <div className="w-16 h-16 flex items-center justify-center">
+            <a
+              href="https://dexscreener.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-16 h-16 flex items-center justify-center hover:scale-110 transition-transform"
+            >
               <img src="/images/owl-logo.png" alt="DexScreener" className="w-12 h-12 object-contain" />
-            </div>
-            <div className="w-16 h-16 flex items-center justify-center">
+            </a>
+            <a
+              href="https://x.com/Bugo_onBase"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-16 h-16 flex items-center justify-center hover:scale-110 transition-transform"
+            >
               <img src="/images/twitter-x-logo-clean.png" alt="Twitter X" className="w-12 h-12 object-contain" />
-            </div>
-            <div className="w-16 h-16 flex items-center justify-center">
+            </a>
+            <a
+              href="https://t.me/bugoonbase"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-16 h-16 flex items-center justify-center hover:scale-110 transition-transform"
+            >
               <img src="/images/telegram-logo-clean.png" alt="Telegram" className="w-12 h-12 object-contain" />
-            </div>
+            </a>
           </div>
         </div>
       </div>
