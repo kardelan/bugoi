@@ -8,6 +8,157 @@ export default function BugoWebsite() {
 
   const contractAddress = "0x6c490719ce19f3c194f3c4f7c2e11c4f7c2e11c4f7c2e11c4f7c2e11"
 
+  const galleryImages = [
+    {
+      src: "/images/gallery/bugo-yacht.jpeg",
+      alt: "BUGO on yacht with laptop and money",
+      title: "Yacht Life",
+    },
+    {
+      src: "/images/gallery/bugo-knight.jpeg",
+      alt: "BUGO as medieval knight",
+      title: "Knight BUGO",
+    },
+    {
+      src: "/images/gallery/bugo-king.jpeg",
+      alt: "BUGO as crypto king with crown",
+      title: "Crypto King",
+    },
+    {
+      src: "/images/gallery/bugo-poker.jpeg",
+      alt: "BUGO playing poker",
+      title: "High Stakes",
+    },
+    {
+      src: "/images/gallery/bugo-throne.jpeg",
+      alt: "BUGO on green throne",
+      title: "Throne Room",
+    },
+    {
+      src: "/images/gallery/bugo-candles.jpeg",
+      alt: "BUGO with green trading candles",
+      title: "Bull Market",
+    },
+    {
+      src: "/images/gallery/bugo-celebration.jpeg",
+      alt: "BUGO bears celebrating",
+      title: "Victory Celebration",
+    },
+    {
+      src: "/images/gallery/bugo-climbing.jpeg",
+      alt: "BUGO climbing green candles",
+      title: "To The Moon",
+    },
+    {
+      src: "/images/gallery/bugo-driving.jpeg",
+      alt: "BUGO driving with money",
+      title: "Money Drive",
+    },
+    {
+      src: "/images/gallery/bugo-gym.jpeg",
+      alt: "BUGO doing push-ups",
+      title: "Strong Bear",
+    },
+  ]
+
+  const renderGallery = () => (
+    <div className="min-h-screen bg-gradient-to-br from-purple-600 to-blue-600 relative overflow-hidden">
+      {/* Navigation */}
+      <nav className="relative z-10 flex items-center justify-between p-6">
+        <div
+          className="flex items-center space-x-2 cursor-pointer hover:scale-105 transition-transform"
+          onClick={() => setCurrentSection("home")}
+        >
+          <div className="w-12 h-12 flex items-center justify-center">
+            <img src="/images/bugo-logo.png" alt="BUGO Logo" className="w-12 h-12 object-contain" />
+          </div>
+          <span className="text-white font-bold-caps text-xl">BUGO</span>
+        </div>
+
+        <div className="flex items-center space-x-6 bg-blue-500 rounded-full px-8 py-4">
+          <button
+            onClick={() => setCurrentSection("home")}
+            className="text-white hover:text-yellow-300 font-menu text-sm transition-colors text-shadow"
+          >
+            HOME
+          </button>
+          <button
+            onClick={() => setCurrentSection("about")}
+            className="text-white hover:text-yellow-300 font-menu text-sm transition-colors text-shadow"
+          >
+            ABOUT
+          </button>
+          <button
+            onClick={() => setCurrentSection("buy")}
+            className="text-white hover:text-yellow-300 font-menu text-sm transition-colors text-shadow"
+          >
+            HOW TO BUY
+          </button>
+          <button
+            onClick={() => setCurrentSection("gallery")}
+            className="text-white font-menu text-sm transition-colors text-shadow bg-white/20 px-4 py-2 rounded-full"
+          >
+            GALLERY
+          </button>
+          <button
+            onClick={() => setCurrentSection("tokenomics")}
+            className="text-white hover:text-yellow-300 font-menu text-sm transition-colors text-shadow"
+          >
+            TOKENOMICS
+          </button>
+        </div>
+
+        <div className="flex items-center space-x-4">
+          <Button className="bg-blue-500 hover:bg-blue-600 text-white font-bold-caps px-6 py-3 rounded-full text-shadow">
+            BUY BUGO
+          </Button>
+        </div>
+      </nav>
+
+      {/* Gallery Content */}
+      <div className="relative z-10 container mx-auto px-6 py-8">
+        {/* Title */}
+        <div className="text-center mb-12">
+          <h1 className="text-6xl md:text-8xl font-handwriting text-white mb-6 transform -rotate-1 text-shadow-strong">
+            MEME GALLERY
+          </h1>
+          <p className="text-2xl text-white/90 font-handwriting text-shadow">
+            The many faces of BUGO - from yacht life to moon missions!
+          </p>
+        </div>
+
+        {/* Gallery Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          {galleryImages.map((image, index) => (
+            <div
+              key={index}
+              className="group relative bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 hover:bg-white/20"
+            >
+              <div className="aspect-square overflow-hidden">
+                <img
+                  src={image.src || "/placeholder.svg"}
+                  alt={image.alt}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-white font-handwriting text-lg text-center">{image.title}</h3>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom CTA */}
+        <div className="text-center mt-16">
+          <p className="text-2xl text-white font-handwriting mb-8 text-shadow">Ready to join the BUGO revolution?</p>
+          <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold-caps px-8 py-4 rounded-full text-xl">
+            BUY $BUGO NOW
+          </Button>
+        </div>
+      </div>
+    </div>
+  )
+
   const renderBuy = () => (
     <div
       className="min-h-screen relative overflow-hidden"
@@ -20,7 +171,10 @@ export default function BugoWebsite() {
     >
       {/* Navigation */}
       <nav className="relative z-10 flex items-center justify-between p-6 bg-black/80">
-        <div className="flex items-center space-x-2">
+        <div
+          className="flex items-center space-x-2 cursor-pointer hover:scale-105 transition-transform"
+          onClick={() => setCurrentSection("home")}
+        >
           <div className="w-12 h-12 flex items-center justify-center">
             <img src="/images/bugo-logo.png" alt="BUGO Logo" className="w-12 h-12 object-contain" />
           </div>
@@ -28,6 +182,12 @@ export default function BugoWebsite() {
         </div>
 
         <div className="flex items-center space-x-6 bg-blue-500 rounded-full px-8 py-4">
+          <button
+            onClick={() => setCurrentSection("home")}
+            className="text-white hover:text-yellow-300 font-menu text-sm transition-colors text-shadow"
+          >
+            HOME
+          </button>
           <button
             onClick={() => setCurrentSection("about")}
             className="text-white hover:text-yellow-300 font-menu text-sm transition-colors text-shadow"
@@ -125,7 +285,10 @@ export default function BugoWebsite() {
     <div className="min-h-screen bg-black relative overflow-hidden">
       {/* Navigation */}
       <nav className="relative z-10 flex items-center justify-between p-6">
-        <div className="flex items-center space-x-2">
+        <div
+          className="flex items-center space-x-2 cursor-pointer hover:scale-105 transition-transform"
+          onClick={() => setCurrentSection("home")}
+        >
           <div className="w-12 h-12 flex items-center justify-center">
             <img src="/images/bugo-logo.png" alt="BUGO Logo" className="w-12 h-12 object-contain" />
           </div>
@@ -133,6 +296,12 @@ export default function BugoWebsite() {
         </div>
 
         <div className="flex items-center space-x-6 bg-blue-500 rounded-full px-8 py-4">
+          <button
+            onClick={() => setCurrentSection("home")}
+            className="text-white hover:text-yellow-300 font-menu text-sm transition-colors text-shadow"
+          >
+            HOME
+          </button>
           <button
             onClick={() => setCurrentSection("about")}
             className="text-white hover:text-yellow-300 font-menu text-sm transition-colors text-shadow"
@@ -235,7 +404,10 @@ export default function BugoWebsite() {
     >
       {/* Navigation */}
       <nav className="relative z-10 flex items-center justify-between p-6">
-        <div className="flex items-center space-x-2">
+        <div
+          className="flex items-center space-x-2 cursor-pointer hover:scale-105 transition-transform"
+          onClick={() => setCurrentSection("home")}
+        >
           <div className="w-12 h-12 flex items-center justify-center">
             <img src="/images/bugo-logo.png" alt="BUGO Logo" className="w-12 h-12 object-contain" />
           </div>
@@ -243,6 +415,12 @@ export default function BugoWebsite() {
         </div>
 
         <div className="flex items-center space-x-6 bg-blue-500 rounded-full px-8 py-4">
+          <button
+            onClick={() => setCurrentSection("home")}
+            className="text-white hover:text-yellow-300 font-menu text-sm transition-colors text-shadow"
+          >
+            HOME
+          </button>
           <button
             onClick={() => setCurrentSection("about")}
             className="text-white font-menu text-sm transition-colors text-shadow bg-white/20 px-4 py-2 rounded-full"
@@ -442,7 +620,7 @@ export default function BugoWebsite() {
           </div>
 
           <h3 className="text-4xl md:text-5xl font-handwriting text-white mb-8 transform -rotate-1">
-            $BASE Maxi with a bearish grin.
+            $BUGO Maxi with a bearish grin.
           </h3>
 
           {/* Social Media Buttons */}
@@ -515,6 +693,9 @@ export default function BugoWebsite() {
   }
   if (currentSection === "buy") {
     return renderBuy()
+  }
+  if (currentSection === "gallery") {
+    return renderGallery()
   }
   if (currentSection === "tokenomics") {
     return renderTokenomics()
